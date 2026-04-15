@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator: Simple Project</title>
+    <title>Calculator : Umair</title>
     <link rel="stylesheet" href="cal.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="screen">
-      </div>
-      <div class="buttons">
-        <button id="ac" class="btn">AC</button>
-        <button id="delete" class="btn">c</button>
-        <button id="parcentage" class="btn operator">%</button>
-        <button id="divide" class="btn operator">/</button>
-        <button id="seven" class="btn operand">7</button>
-        <button id="eight" class="btn operand">8</button>
-        <button id="nine" class="btn operand">9</button>
-        <button id="multiply" class="btn operator">*</button>
-        <button id="four" class="btn operand">4</button>
-        <button id="five" class="btn operand">5</button>
-        <button id="six" class="btn operand">6</button>
-        <button id="minus" class="btn operator">-</button>
-        <button id="one" class="btn operand">1</button>
-        <button id="two" class="btn operand">2</button>
-        <button id="three" class="btn operand">3</button>
-        <button id="plus" class="btn operator">+</button>
-        <button id="zero" class="btn operand">0</button>
-        <button id="dot" class="btn">.</button>
-        <button id="equal" class="btn">=</button>
-      </div>
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen-container">
+            <div class="previous-operand" id="previous"></div>
+            <div class="current-operand" id="current">0</div>
+        </div>
+        <div class="buttons">
+            <button class="btn function" data-action="clear">AC</button>
+            <button class="btn function" data-action="delete">DEL</button>
+            <button class="btn operator" data-action="percent">%</button>
+            <button class="btn operator" data-action="operator" data-value="/">÷</button>
+            
+            <button class="btn number" data-value="7">7</button>
+            <button class="btn number" data-value="8">8</button>
+            <button class="btn number" data-value="9">9</button>
+            <button class="btn operator" data-action="operator" data-value="*">×</button>
+            
+            <button class="btn number" data-value="4">4</button>
+            <button class="btn number" data-value="5">5</button>
+            <button class="btn number" data-value="6">6</button>
+            <button class="btn operator" data-action="operator" data-value="-">−</button>
+            
+            <button class="btn number" data-value="1">1</button>
+            <button class="btn number" data-value="2">2</button>
+            <button class="btn number" data-value="3">3</button>
+            <button class="btn operator" data-action="operator" data-value="+">+</button>
+            
+            <button class="btn number zero" data-value="0">0</button>
+            <button class="btn number" data-value=".">.</button>
+            <button class="btn equals" data-action="calculate">=</button>
+        </div>
     </div>
 
     <script src="cal.js"></script>
-  </body>
+</body>
 </html>
